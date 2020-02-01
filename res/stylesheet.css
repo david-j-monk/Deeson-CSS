@@ -1,0 +1,120 @@
+:root {
+	--bg-color: rgb(250, 236, 225);
+	--black: rgb(25, 26, 21);
+	--blue: rgb(18, 135, 204);
+	--red: rgb(251, 28, 49);
+}
+
+body {
+	display: block;
+	margin: 10px;
+}
+
+#page {
+	position: absolute;
+	width: 394px;
+	height: 563px;
+	z-index: -1;
+	background-color: var(--bg-color);
+}
+
+#blue-block {
+	position: absolute;
+	top: 125px;
+	left: 10px;
+	width: 160px;
+	height: 237px;
+	background: var(--blue);
+}
+
+#black-shadow {
+	position: absolute;
+	top: 14px;
+	left: 166px;
+	width: 51px;
+	height: 435px;
+	background: var(--bg-color);
+}
+
+#black-shadow:before, #black-shadow:after {
+	content: "";
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	z-index: 0;
+	transform-origin: right bottom;
+}
+
+#black-shadow:before {
+	height: 122px;
+	left: -1px;
+	transform: skewX(32.55deg);
+	box-shadow: 1px 122px 0px 0px var(--black);
+}
+
+#black-shadow:after {
+	width: 71px;
+	top: 0px;
+	transform: skewY(57.45deg);
+	box-shadow: 71px 0px var(--black);
+}
+
+#black-shadow-cutoff-bottom {
+	position: absolute;
+	top: 566px;
+	left: 200px;
+	width: 100px;
+	height: 6px;
+	background: var(--bg-color);
+}
+
+#black-shadow-cutoff-right {
+	position: absolute;
+	top: 300px;
+	left: 288px;
+	width: 20px;
+	height: 273px;
+	background: var(--bg-color);
+}
+
+#red-block {
+	position: absolute;
+	top: 125px;
+	left: 288px;
+	width: 116px;
+	height: 237px;
+	background: var(--red);
+}
+
+#title {
+	position: absolute;
+	top: 394px;
+	left: 26px;
+	color: var(--black);
+	font-family: Calibri;
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 27px;
+}
+
+#information {
+	position: absolute;
+	top: 485px;
+	left: 26px;
+	color: var(--black);
+	font-family: Calibri;
+	font-weight: 800;
+	font-size: 9px;
+	line-height: 11px;
+}
+
+#location {
+	position: absolute;
+	top: 485px;
+	left: 308px;
+	color: var(--black);
+	font-family: Calibri;
+	font-weight: 800;
+	font-size: 9px;
+	line-height: 11px;
+}
